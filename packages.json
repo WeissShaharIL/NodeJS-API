@@ -1,0 +1,17 @@
+{
+    "name": "apitask",
+    "version": "1.0.0",
+    "description": "Task API",
+    "main": "index.js",
+    "dependencies": {
+      "express": "^4.17.3"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "start": "nodejs index.js",
+      "test": "echo test && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  
