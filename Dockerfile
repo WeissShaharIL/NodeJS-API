@@ -8,7 +8,7 @@ COPY package.json /usr/srv/app
 
 RUN npm install
 
-COPY . /usr/srv/app
+#COPY . /usr/srv/app
 
 EXPOSE 3000
 
