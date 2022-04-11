@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: shaharweiss1234/nodeget
+  repository: shaharweiss1234/task01
   tag: latest
   pullPolicy: IfNotPresent
 
