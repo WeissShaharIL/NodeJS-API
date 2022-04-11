@@ -8,8 +8,7 @@
     },
     "devDependencies": {},
     "scripts": {
-      "start": "nodejs index.js",
-      "test": "echo test && exit 1"
+      "start": "nodejs index.js"      
     },
     "author": "",
     "license": "ISC"
