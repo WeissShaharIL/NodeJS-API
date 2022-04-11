@@ -16,10 +16,7 @@ app.use((req, res, next) => {
 
 app.post('/', (req, res, next) => {
     try {
-         //add check to see that it has the string "Hi!"
-
-           res.send("Hi!")
-
+        "Hi!" in req.body ? res.send("Hi!") :  res.sendStatus(404);
 
     } catch (error) {
         next(error)
@@ -31,7 +28,3 @@ app.listen(port, () => {
 
 
 });
-
-//app.listen(3000)
-
-//curl -X POST --data 'Hi!' http://localhost:3000

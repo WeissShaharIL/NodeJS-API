@@ -4,7 +4,11 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install apt-transport-https
+
+#Do we need it?
 sudo apt install virtualbox virtualbox-ext-pack
+#Do we need it?
+
 wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo cp minikube-linux-amd64 /usr/local/bin/minikube
 sudo chmod 755 /usr/local/bin/minikube
@@ -42,3 +46,5 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo usermod -aG docker $USER && newgrp docker
 
+
+4. lift minikube

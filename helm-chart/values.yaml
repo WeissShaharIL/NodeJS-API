@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: pkterraform/node-web-app
+  repository: shaharweiss1234/nodeget
   tag: latest
   pullPolicy: IfNotPresent
 
@@ -15,7 +15,7 @@ fullnameOverride: ""
 service:
   type: NodePort
   exposePort: 30000
-  targetPort: 8080
+  targetPort: 3000
   internalPort: 3000
 
 
