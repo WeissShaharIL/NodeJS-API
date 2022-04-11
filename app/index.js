@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 app.post('/', (req, res, next) => {
     try {
-        "Hi!" in req.body ? res.send("Hi!") :  res.sendStatus(404);
+        "Hi!" in req.body ? res.send("Hi!") :   console.log("Not a good request");
 
     } catch (error) {
         next(error)
