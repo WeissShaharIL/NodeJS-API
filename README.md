@@ -1,9 +1,16 @@
+# Deploy Minikube - single cluster K8S - Task
+
+## Description
+This task was tested on ubuntu server 1804
 
 
-1. install minikube
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get install apt-transport-https
+## Prerequisites
+
+Minikube
+
+$ sudo apt-get update -y
+$ sudo apt-get upgrade -y
+$ sudo apt-get install apt-transport-https
 
 #Do we need it?
 sudo apt install virtualbox virtualbox-ext-pack
