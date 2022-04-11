@@ -1,7 +1,10 @@
+'use strict';
+const express = require('express');
+// Constants
+const PORT = 3000;
 
-const express = require('express')
-const app = express()
-const port = 3000;
+// App
+const app = express();
 
 app.use(express.json())
 app.use(express.urlencoded({
@@ -14,6 +17,7 @@ app.use((req, res, next) => {
     next()
 })
 
+
 app.post('/', (req, res, next) => {
     try {
         "Hi!" in req.body ? res.send("Hi!") :   console.log("Not a good request");
@@ -23,8 +27,10 @@ app.post('/', (req, res, next) => {
     }
 })
 
-app.listen(port, () => {
-    console.log(`Listenning on port ${port}`)
 
+app.listen(PORT, () =>{
+console.log(`Listenning on port:${PORT}`)
 
 });
+
+

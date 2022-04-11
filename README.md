@@ -56,19 +56,15 @@ Start K8S Cluster via minikube:
  ```sh
  helm install apitask helm-chart/
  ```
- Expose with Minikube:
- ```sh
- minikube service apitask-helm-chart --url
- ```
  Port forward
  ```sh
  sudo kubectl port-forward service/apitask-helm-chart --address 0.0.0.0 3000:3000
  ```
- Get ip of the machine:
+ Expose with Minikube:
  ```sh
- ifconfig | sed -En 's/127.0.0.1//;s/.*inet (addr:)?(([0-9]*\.){3}[0-9]*).*/\2/p'
+ minikube service apitask-helm-chart --url
  ```
- Run curl from other machine:
+  Run curl from other machine:
  ```sh
   curl -X POST --data 'Hi!' http://machine-ip:port
  ```
