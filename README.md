@@ -58,11 +58,11 @@ Start K8S Cluster via minikube:
  ```
  Expose with Minikube:
  ```sh
- minikube service task01-helm-chart --url
+ minikube service apitask-helm-chart --url
  ```
  Port forward
  ```sh
- sudo kubectl port-forward service/task01-helm-chart --address 0.0.0.0 3000:3000
+ sudo kubectl port-forward service/apitask-helm-chart --address 0.0.0.0 3000:3000
  ```
  Get ip of the machine:
  ```sh
