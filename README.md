@@ -22,6 +22,10 @@ wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd6
 sudo cp minikube-linux-amd64 /usr/local/bin/minikube
 sudo chmod 755 /usr/local/bin/minikube
 ```
+Verify
+```sh
+minikube version
+```
 
 ### Kubectl
 ```sh
@@ -29,12 +33,22 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s http
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 ```
+Verify
+```sh
+kubectl version
+```
+
 ### Helm
 ```sh
 curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
 chmod 700 get_helm.sh
 ./get_helm.sh
 ```
+Verify
+```sh
+helm version
+```
+
 
 ### Docker
 ```sh
@@ -49,6 +63,11 @@ Add user to Docker group in order to run minikube
 ```sh
 sudo usermod -aG docker $USER && newgrp docker
 ```
+Verify
+```sh
+docker version
+```
+
 ## Deployment
 git clone the repo the the machine && cd into it.
 ```sh
@@ -67,7 +86,7 @@ Start K8S Cluster via minikube:
  minikube service task01-helm-chart --url
  ```
  ### Port forward
- Allow a few moments for service to be out of pending state (~15 seconds)
+ Allow a few moments for pod to spin up (~15 seconds)
  ```sh
  sudo kubectl port-forward service/task01-helm-chart --address 0.0.0.0 3000:3000
  ```
