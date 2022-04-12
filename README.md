@@ -59,14 +59,15 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 ```
-Add user to Docker group in order to run minikube
-```sh
-sudo usermod -aG docker $USER && newgrp docker
-```
 Verify
 ```sh
 docker version
 ```
+Add user to Docker group in order to run minikube
+```sh
+sudo usermod -aG docker $USER && newgrp docker
+```
+
 
 ## Deployment
 git clone the repo the the machine && cd into it.
