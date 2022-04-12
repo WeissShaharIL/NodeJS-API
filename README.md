@@ -60,15 +60,15 @@ Start K8S Cluster via minikube:
  ```
  Deplopy using Helm:
  ```sh
- helm install apitask helm-chart/
+ helm install task01 helm-chart/
+ ```
+  Expose with Minikube:
+ ```sh
+ minikube service task01-helm-chart --url
  ```
  Port forward
  ```sh
  sudo kubectl port-forward service/task01-helm-chart --address 0.0.0.0 3000:3000
- ```
- Expose with Minikube:
- ```sh
- minikube service apitask-helm-chart --url
  ```
   Run curl from other machine:
  ```sh
