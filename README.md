@@ -58,7 +58,7 @@ Start K8S Cluster via minikube:
  ```
  Port forward
  ```sh
- sudo kubectl port-forward service/apitask-helm-chart --address 0.0.0.0 3000:3000
+ sudo kubectl port-forward service/task01-helm-chart --address 0.0.0.0 3000:3000
  ```
  Expose with Minikube:
  ```sh

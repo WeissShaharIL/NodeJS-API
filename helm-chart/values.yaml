@@ -14,8 +14,8 @@ fullnameOverride: ""
 
 service:
   type: NodePort
-  exposePort: 30000
-  targetPort: 3000
+  exposePort: 3000
+  targetPort: 8080
   internalPort: 3000
 
 
