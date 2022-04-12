@@ -67,6 +67,7 @@ Start K8S Cluster via minikube:
  minikube service task01-helm-chart --url
  ```
  Port forward
+ Allow a few moments for service to be out of pending state (~15 seconds)
  ```sh
  sudo kubectl port-forward service/task01-helm-chart --address 0.0.0.0 3000:3000
  ```
