@@ -51,6 +51,9 @@ sudo usermod -aG docker $USER && newgrp docker
 ```
 ## Deployment
 git clone the repo the the machine && cd into it.
+```sh
+git clone https://github.com/WeissShaharIL/NodeJS-API.git && cd NodeJS-API
+```
 Start K8S Cluster via minikube:
  ```sh
  minikube start --driver=docker --extra-config=apiserver.service-node-port-range=1-65535
